@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeaderStyled = styled.header`
     background-color: var(--primary-color);
     width: 100%;
+    z-index: 5;
     height: 12vh;
     min-height: 3rem;
     position: fixed;
@@ -54,5 +55,24 @@ export const ButtonCart = styled.button`
     }
 
     
+
+`
+
+export const ToogleStyled = styled.button`
+
+    border-radius: 30px;
+    padding: 0.1rem;
+    width: 3.2rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    display: flex;
+    color: var(--white-0);
+    font-size: 1.5rem;
+    position: relative;
+
+    >div:nth-child(2) {
+        position: absolute;
+        bottom: -6px;
+    }
 
 `

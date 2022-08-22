@@ -17,11 +17,9 @@ const GlobalStyle = createGlobalStyle`
               --grey-1: #373737;
               --grey-2:#EEEEEE;
 
-              --secondary-color: #ffb886;
-
               --white-0: #fff;
+              --white-1: #0e4166;
               --background: #E5E5E5;
-              --invert: black;
             `
           );
         }}
@@ -31,11 +29,6 @@ ${(props) => {
             props.theme === "dark" &&
             css`
               --primary-color: #0F52BA;
-              --secondary-color: #ffb886;
-
-              --filter-color: #ffb162;
-              --hover-color: #ff6b09;
-
               --black: #000000;
               --grey-0: #2C2C2C;
               --grey-1: #373737;
@@ -43,9 +36,9 @@ ${(props) => {
               --grey-yellow: #baae9c;
 
               --white-0: #fff;
+              --white-1: #0e4166;
               
-              --background: #1e1a17;
-              --invert: #fff;
+              --background: #14171a;
             `
           );
         }}
