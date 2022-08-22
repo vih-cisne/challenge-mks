@@ -55,6 +55,4 @@ const Cart = ({showCart, setShowCart}:IProps) => {
 
 }
 
-//MKS sistemas © Todos os direitos reservados
-
 export default Cart
