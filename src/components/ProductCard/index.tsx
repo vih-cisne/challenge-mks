@@ -1,9 +1,10 @@
 import { ButtonBuy, CardStyled } from "./style"
 import { IProduct } from "../../redux/productsSlice";
-import bagIcon from "../../images/shopping-bag.svg"
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../redux/store";
 import { addToCart } from "../../redux/cartSlice";
+import React from 'react'
+
 
 
 interface IPropsProducts {
@@ -25,7 +26,7 @@ const ProductCard = ({product}: IPropsProducts) => {
             <span>R$ {priceFormat}</span></div>
             <p>{product.description}</p>
 
-            <ButtonBuy onClick={() => dispatch(addToCart(product))}><img src={bagIcon} alt="Ícone de sacola"/>Comprar</ButtonBuy>
+            <ButtonBuy aria-labelledby="comprar" onClick={() => dispatch(addToCart(product))}><img src="./images/shopping-bag.svg" alt="Ícone de sacola"/>Comprar</ButtonBuy>
         </CardStyled>
     )
 }

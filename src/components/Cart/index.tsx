@@ -1,5 +1,7 @@
 import { CartStyled, ContainerProductsCart, FinishButton, HeaderOfCart, Total } from "./style"
 import { usePresence, AnimatePresence } from "framer-motion"
+import React from 'react'
+
 
 import { IProductCart } from "../../redux/cartSlice"
 
@@ -11,7 +13,7 @@ import ProductCart from "../ProductCart";
 
 interface IProps {
     showCart: boolean
-    setShowCart: any
+    setShowCart?: any
 }
 
 

@@ -1,7 +1,8 @@
 import Skeleton from "react-loading-skeleton"
 import { ButtonBuy} from "../ProductCard/style"
 import { SkeletonCard } from "./style"
-import bagIcon from "../../images/shopping-bag.svg"
+import React from 'react'
+
 
 
 
@@ -17,7 +18,7 @@ const Skeletons = () => {
             <div><Skeleton width={'6rem'} height={'2rem'}/><Skeleton width={'3rem'} height={'1.5rem'}/></div>
             <p><Skeleton height={'2rem'}/></p>
 
-            <ButtonBuy><img src={bagIcon} alt="Ícone de sacola"/>Comprar</ButtonBuy>
+            <ButtonBuy><img src="./images/shopping-bag.svg" alt="Ícone de sacola"/>Comprar</ButtonBuy>
         </SkeletonCard>)
     
     }

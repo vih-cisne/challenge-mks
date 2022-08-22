@@ -1,11 +1,11 @@
 import { ButtonCart, HeaderStyled, Logo, ToogleStyled } from "./style"
-import cartIcon from '../../images/Vector.svg'
 import { useSelector } from "react-redux"
 import { RootState } from "../../redux/store"
 import { IProductCart } from "../../redux/cartSlice"
 import { Cloud, Moon, Sun } from "phosphor-react"
 import { motion } from "framer-motion"
 import { WiStars } from "react-icons/wi";
+import React from 'react'
 
 interface IThemeProps {
     theme: string
@@ -52,7 +52,7 @@ const Header = ({theme, setTheme, showCart, setShowCart}:IThemeProps) => {
                 <h3>Sistemas</h3>
             </Logo>
 
-            <ButtonCart onClick={() => setShowCart(!showCart)}><img src={cartIcon} alt="Ícone de um carrinho"/><span>{cart.cartList.reduce((acc, item:IProductCart) => acc += item.quantity, 0)}</span></ButtonCart>
+            <ButtonCart onClick={() => setShowCart(!showCart)}><img src="./images/Vector.svg" alt="Ícone de um carrinho"/><span data-testid='totalItems'>{cart.cartList.reduce((acc, item:IProductCart) => acc += item.quantity, 0)}</span></ButtonCart>
         
         </HeaderStyled>
     )

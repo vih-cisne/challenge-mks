@@ -5,6 +5,8 @@ import { AppDispatch, RootState } from "../../redux/store";
 import ProductCard from "../ProductCard";
 import Skeletons from "../Skeletons";
 import { ContainerProducts } from "./style";
+import React from 'react'
+
 
 
 const ProductsContainer = () => {

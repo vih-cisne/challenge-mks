@@ -2,9 +2,10 @@ import { IProductCart } from "../../redux/cartSlice"
 import { Card, CloseButton, QtdContainer } from "./style"
 import { useDispatch} from "react-redux";
 import { AppDispatch } from "../../redux/store";
+import React from 'react'
+
 
 import { removeItem, incrementQuantity, decrementQuantity } from "../../redux/cartSlice";
-
 
 
 interface IPropsCartProduct {
